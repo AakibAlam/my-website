@@ -4,7 +4,7 @@ import Skills from "./pages/skills";
 import Projects from "./pages/projects";
 import NavBar from "./components/nav";
 import Footer from "./components/footer";
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
