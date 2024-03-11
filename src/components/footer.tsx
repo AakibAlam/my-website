@@ -2,10 +2,10 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import emailjs from "emailjs-com";
 import { FaEnvelope, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
-const VITE_MY_EMAIL = "mdaakibalamansari@gmail.com";
-const VITE_YOUR_SERVICE_ID = "service_8eone23";
-const VITE_YOUR_TEMPLATE_ID = "template_n6em5j4";
-const VITE_YOUR_USER_ID = "XWS6sYiSqGxHPeZ_n";
+const VITE_MY_EMAIL = import.meta.env.VITE_MY_EMAIL as string;
+const VITE_YOUR_SERVICE_ID = import.meta.env.VITE_YOUR_SERVICE_ID as string;
+const VITE_YOUR_TEMPLATE_ID = import.meta.env.VITE_YOUR_TEMPLATE_ID as string;
+const VITE_YOUR_USER_ID = import.meta.env.VITE_YOUR_USER_ID as string;
 
 function Footer() {
   const [inputValue, setInputValue] = useState({
@@ -56,7 +56,7 @@ function Footer() {
 
   return (
     <div className="bg-black text-white py-8">
-      <div className="w-11/12 min-w-96 container flex flex-col sm:flex-row justify-center mb-12">
+      <div className="w-11/12 container flex flex-col sm:flex-row justify-center mb-12">
         <div className="w-full sm:w-1/3 flex flex-col items-start">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl">
             Contact Me:
@@ -69,15 +69,15 @@ function Footer() {
               name="name"
               onChange={handleOnChange}
               value={inputValue.name}
-              placeholder="Your Name"
-              className="w-1/3 h-12 mb-4 mr-6 bg-gray-700 text-white border border-gray-600 rounded-sm text-center"
+              placeholder="Name"
+              className="w-1/3 h-12 mb-4 mr-4 bg-gray-700 text-white border border-gray-600 rounded-sm text-center"
             />
             <input
               type="email"
               name="email"
               onChange={handleOnChange}
               value={inputValue.email}
-              placeholder="Your Email"
+              placeholder="Email"
               className="w-7/12 h-12 mb-4 bg-gray-700 text-white border border-gray-600 rounded-sm text-center"
             />
             <textarea
@@ -98,7 +98,7 @@ function Footer() {
           </form>
         </div>
       </div>
-      <div className="flex justify-center gap-12 mt-8">
+      <div className="flex justify-center gap-8 lg:gap-12 mt-8">
         <a
           href="https://github.com/AakibAlam"
           className="text-purple-400 text-4xl hover:text-purple-600"
