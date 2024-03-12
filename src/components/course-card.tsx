@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 
 function CourseCard({ text, col }: { text: string; col: string }) {
   const [fontSize, setFontSize] = useState<number>(24);
+  const backgroundColor = col === "cyan" ? "bg-cyan-200" : "bg-gray-200";
 
   useEffect(() => {
     const containerWidth = 400;
@@ -16,7 +17,10 @@ function CourseCard({ text, col }: { text: string; col: string }) {
 
   return (
     <div
-      className={`flex justify-center items-center text-center w-64 md:w-96 h-16 md:h-20 m-2 md:m-4 rounded-lg bg-${col}-200`}
+      className={
+        "flex justify-center items-center text-center w-64 md:w-96 h-16 md:h-20 m-2 md:m-4 rounded-lg " +
+        backgroundColor
+      }
     >
       <h1 style={{ fontSize: `${fontSize}px` }}>{text}</h1>
     </div>
