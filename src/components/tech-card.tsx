@@ -1,7 +1,13 @@
 import { useState, useEffect } from "react";
 
-function TechCard({ text }: { text: string }) {
+function TechCard({ text, col }: { text: string; col: string }) {
   const [fontSize, setFontSize] = useState<number>(24);
+  const backgroundColor =
+    col === "teal"
+      ? "bg-teal-200"
+      : col === "lime"
+      ? "bg-lime-200"
+      : "bg-gray-200";
 
   useEffect(() => {
     const containerWidth = 150;
@@ -13,8 +19,14 @@ function TechCard({ text }: { text: string }) {
 
     setFontSize(newFontSize);
   }, [text]);
+
   return (
-    <div className="flex justify-center items-center w-32 h-12 lg:w-40 lg:h-16 m-2 rounded-lg bg-lime-200">
+    <div
+      className={
+        "flex justify-center items-center w-32 h-12 lg:w-40 lg:h-16 m-2 rounded-lg " +
+        backgroundColor
+      }
+    >
       <h1 style={{ fontSize: `${fontSize}px` }}>{text}</h1>
     </div>
   );

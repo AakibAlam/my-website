@@ -45,7 +45,7 @@ function About() {
 
         <div className="py-12 grid md:grid-cols-2 lg:grid-cols-3 gap-2">
           <div className="pl-4 mb-8">
-            <h1 className="text-3xl text-left text-teal-600">
+            <h1 className="text-2xl text-left text-teal-600">
               Competitive Programming
             </h1>
           </div>
