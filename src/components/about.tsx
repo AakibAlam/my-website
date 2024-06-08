@@ -1,4 +1,4 @@
-import Me from "../../public/me.png";
+import Me from "../../public/me.jpeg";
 
 function Coach() {
   return (

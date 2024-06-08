@@ -10,7 +10,8 @@ function About() {
         description="A glimpse into the journey that shapes my work."
       />
       <div className="lg:p-4 mx-auto mt-12">
-        <div className="py-12 grid grid-cols-1 lg:grid-cols-3 gap-2">
+
+        <div className="pt-12 grid grid-cols-1 lg:grid-cols-3 gap-2">
           <div className="lg:col-span-1 pl-4 mb-4">
             <h1 className="text-3xl text-left text-teal-600">
               Work Experience
@@ -18,10 +19,40 @@ function About() {
           </div>
           <div className="lg:col-span-2 p-8 flex flex-wrap justify-between items-center bg-neutral-200 rounded-lg">
             <h1 className="text-left text-blue-500 text-base lg:text-4xl pb-3">
+              Blockchain Developer | MagpieXYZ
+            </h1>
+            <h1 className="text-right text-blue-500 text-base text-xs lg:text-xl pb-3">
+              Mar'24 - Present
+            </h1>
+            <p className="lg:col-span-2 text-sm lg:text-xl text-justify italic">
+              As a Backend Developer at MagpieXYZ, I am an integral part of the backend team, contributing to the
+              development and maintenance of our cutting-edge Web3 infrastructure.
+              <ul className="mt-2">
+                <li>
+                  - Writing and deploying secure and efficient smart contracts
+                </li>
+                <li>
+                  - Managing forked mainnet scripts to test and simulate blockchain interactions
+                </li>
+                <li>
+                  - Creating comprehensive tests for smart contracts to ensure reliability
+                </li>
+                <li>
+                  - Working with developers and teams to integrate new features and optimize functionalities
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+
+        <div className="py-4 lg: py-8 sm:py-2 grid grid-cols-1 lg:grid-cols-3 gap-2">
+          <div className="lg:col-span-1 pl-4 mb-4"></div>
+          <div className="lg:col-span-2 p-8 flex flex-wrap justify-between items-center bg-neutral-200 rounded-lg">
+            <h1 className="text-left text-blue-500 text-base lg:text-4xl pb-3">
               Software Engineer | Yubi
             </h1>
-            <h1 className="text-right text-blue-500 text-base lg:text-4xl pb-3">
-              May'23-July'23
+            <h1 className="text-right text-blue-500 text-base text-xs lg:text-xl pb-3">
+              May'23 - July'23
             </h1>
             <p className="lg:col-span-2 text-sm lg:text-xl text-justify italic">
               I collaborated with the platform team to design and implement an

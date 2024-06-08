@@ -17,19 +17,19 @@ function Skills() {
               <TechCard text="C/C++" col="lime" />
             </div>
             <div className="flex flex-wrap justify-around">
+              <TechCard text="Solidity" col="lime" />
+            </div>
+            <div className="flex flex-wrap justify-around">
+              <TechCard text="TypeScript" col="lime" />
+            </div>
+            <div className="flex flex-wrap justify-around">
               <TechCard text="Python" col="lime" />
             </div>
             <div className="flex flex-wrap justify-around">
               <TechCard text="JavaScript" col="lime" />
             </div>
             <div className="flex flex-wrap justify-around">
-              <TechCard text="TypeScript" col="lime" />
-            </div>
-            <div className="flex flex-wrap justify-around">
               <TechCard text="Java" col="lime" />
-            </div>
-            <div className="flex flex-wrap justify-around">
-              <TechCard text="Golang" col="lime" />
             </div>
             <div className="flex flex-wrap justify-around">
               <TechCard text="HTML" col="lime" />
@@ -78,6 +78,12 @@ function Skills() {
             </div>
             <div className="flex flex-wrap justify-around lg:mb-4">
               <TechCard text="React" col="teal" />
+            </div>
+            <div className="flex flex-wrap justify-around lg:mb-4">
+              <TechCard text="Hardhat" col="teal" />
+            </div>
+            <div className="flex flex-wrap justify-around lg:mb-4">
+              <TechCard text="Foundry" col="teal" />
             </div>
             <div className="flex flex-wrap justify-around lg:mb-4">
               <TechCard text="Nextjs" col="teal" />
@@ -173,6 +179,9 @@ function Skills() {
           </div>
           <div className="flex flex-wrap justify-around lg:mb-4">
             <CourseCard text="Probability & Statistics" col="cyan" />
+          </div>
+          <div className="flex flex-wrap justify-around lg:mb-4">
+            <CourseCard text="Decentralized Finance" col="cyan" />
           </div>
         </div>
       </div>
